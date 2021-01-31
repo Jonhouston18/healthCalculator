@@ -46,7 +46,7 @@ int main() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin >> currentWeight;
     }
-    cout << "\nEnter your hight in inches: ";
+    cout << "\nEnter your height in inches: ";
     cin >> height;
     while(height <= 0) {
             cout << "Please only enter a non-negative numerical value: ";
