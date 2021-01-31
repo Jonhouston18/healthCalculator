@@ -176,43 +176,43 @@ int main() {
     // Output for calorie deficit
     if (gender == 0)
        if (activityLevel == 1) {
-           cout << "You need " << sedentaryMale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << sedentaryMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 1)
        if (activityLevel == 1) {
-           cout << "You need " << sedentaryFemale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << sedentaryFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 0)
        if (activityLevel == 2) {
-           cout << "You need " << lightActiveMale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << lightActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 1)
        if (activityLevel == 2) {
-           cout << "You need " << lightActiveFemale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << lightActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 0)
        if (activityLevel == 3) {
-           cout << "You need " << moderatelyActiveMale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << moderatelyActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 1)
        if (activityLevel == 3) {
-           cout << "You need " << moderatelyActiveFemale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << moderatelyActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 0)
        if (activityLevel == 4) {
-           cout << "You need " << veryActiveMale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << veryActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 1)
        if (activityLevel == 4) {
-           cout << "You need " << veryActiveFemale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << veryActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 0)
        if (activityLevel == 5) {
-           cout << "You need " << extraActiveMale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << extraActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
     if (gender == 1)
        if (activityLevel == 5) {
-           cout << "You need " << extraActiveFemale - 500 << " calroies a day to lose ~ 1lb per week." << endl;
+           cout << "You need " << extraActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
        }
     
     // Output for weight loss time
