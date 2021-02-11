@@ -1,13 +1,13 @@
 /* Health Calculator
  * Author: Jonathan Seibert
- * Version 1.0.0 */
+ * Version 1.0.1 */
 
 #include <iostream>
 #include <cmath>
 using namespace std;
 int main() {
     // variables 
-    int gender;
+    int sex;
     int age;
     int activityLevel;
     double currentWeight;
@@ -22,13 +22,13 @@ int main() {
     cout.precision(1);
 
     //User Input
-    cout << "\nEnter your gender. Type 0 for Male or 1 for Female: ";
-    cin >> gender;
-    while(gender >= 2 || gender <= -1) {
+    cout << "\nEnter your sex. Type 0 for Male or 1 for Female: ";
+    cin >> sex;
+    while(!cin || sex >= 2 || sex <= -1) {
         cout << "Please only enter a 1 or 0: ";
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cin >> gender;
+        cin >> sex;
     }
     cout << "\nWhat's your age: ";
     cin >> age;
@@ -121,51 +121,51 @@ int main() {
     double buildMuscle = currentWeight * .8;
     
     // Output for body fat
-    if (gender == 0) {
+    if (sex == 0) {
            cout << "Your current body fat percentage is " << currentBodyFatMale << "%" << endl;
     }
-    if (gender == 1) {
+    if (sex == 1) {
            cout << "Your current body fat percentage is " << currentBodyFatFemaleTotal << " %" << endl;
     }
 
     // Output for daily calories needed to maintain
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 1) {
            cout << "You need " << sedentaryMale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 1) {
            cout << "You need " << sedentaryFemale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 2) {
            cout << "You need " << lightActiveMale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 2) {
            cout << "You need " << lightActiveFemale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 3) {
            cout << "You need " << moderatelyActiveMale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 3) {
            cout << "You need " << moderatelyActiveFemale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 4) {
            cout << "You need " << veryActiveMale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 4) {
            cout << "You need " << veryActiveFemale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 5) {
            cout << "You need " << extraActiveMale << " caloires a day to maintain your weight." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 5) {
            cout << "You need " << extraActiveFemale << " caloires a day to maintain your weight." << endl;
     }
@@ -174,43 +174,43 @@ int main() {
     cout << "To build muscle, your body needs at least " << buildMuscle << " grams of protein intake per day." <<endl;
     
     // Output for calorie deficit
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 1) {
            cout << "You need " << sedentaryMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 1) {
            cout << "You need " << sedentaryFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 2) {
            cout << "You need " << lightActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 2) {
            cout << "You need " << lightActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 3) {
            cout << "You need " << moderatelyActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 3) {
            cout << "You need " << moderatelyActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 4) {
            cout << "You need " << veryActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 4) {
            cout << "You need " << veryActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 0)
+    if (sex == 0)
        if (activityLevel == 5) {
            cout << "You need " << extraActiveMale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
     }
-    if (gender == 1)
+    if (sex == 1)
        if (activityLevel == 5) {
            cout << "You need " << extraActiveFemale - 500 << " caloires a day to lose ~ 1lb per week." << endl;
        }
@@ -222,6 +222,3 @@ int main() {
     cout << "Keep on the grind!" << endl << endl;
     return 0;
 }
-
-
-
